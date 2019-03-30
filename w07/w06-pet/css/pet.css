@@ -20,19 +20,20 @@ h1#text2{
     position: absolute;
     color: #FFFFFF;
     margin-top: 30px;
-    margin-left: 150px;
+    margin-left: 15px;
 }
 
 aside{
-    width: 100%;
-    height: 40px;
+    width: 800px;
+    height: 50px;
+    background-color:red;
 }
 
 article{
-    width: 628px;
+    width: 800px;
     height: 400px;
-    margin-left: 171px;
-    background-color: beige
+    margin-left: 0px;
+    background-color: rgb(255, 255,97)
 }
 
 footer{
@@ -49,6 +50,7 @@ nav{
 }
 
 nav ul{
+    margin-top: 0px;
     padding: 10px;
     list-style: none;
 }
@@ -60,6 +62,7 @@ nav ul li a{
     background-image: url(../images/btn.png);
     text-indent: 50px;
     line-height: 35px;
+    float: left;
 }
 
 nav ul li a:hover{
