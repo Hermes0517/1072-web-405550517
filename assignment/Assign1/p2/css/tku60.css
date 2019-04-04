@@ -1,0 +1,48 @@
+#container{
+    background:purple;
+    width: 640px;
+    height:585px;
+}
+
+header{
+    background-color:rgb(184, 178, 106);
+    text-align:center;
+    height:80px;
+    margin: 5px;
+}
+
+h1{
+    line-height: 65px;
+}
+
+aside{
+    background-color: antiquewhite;
+    margin-top:-21px;
+    margin-left: 5px;
+    margin-right:5px;
+    height:35px
+}
+
+input{
+    margin: 6px
+}
+#d5{
+    margin-left: 5px;
+    margin-right:5px;
+}
+#d1{
+    margin-left: 5px;
+    margin-right:5px;
+}
+#d2{
+    margin-left: 5px;
+    margin-right:5px;
+}
+#d3{
+    margin-left: 5px;
+    margin-right:5px;
+}
+#d4{
+    margin-left: 5px;
+    margin-right:5px;
+}
