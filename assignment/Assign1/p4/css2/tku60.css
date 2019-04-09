@@ -29,23 +29,23 @@ h1{
 input{
     margin: 6px
 }
-#d5{
+#iframe{
     margin-left: 5px;
     margin-right:5px;
 }
-#d1{
-    margin-left: 5px;
-    margin-right:5px;
+
+#content1{
+    margin-left:5px
 }
-#d2{
-    margin-left: 5px;
-    margin-right:5px;
+#content2{
+    margin-left:5px
 }
-#d3{
-    margin-left: 5px;
-    margin-right:5px;
+#content3{
+    margin-left:5px
 }
-#d4{
-    margin-left: 5px;
-    margin-right:5px;
+#content4{
+    margin-left:5px
+}
+#content5{
+    margin-left:5px
 }
