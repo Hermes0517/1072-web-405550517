@@ -1,0 +1,54 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Pet Web</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="css/p4.css">
+    <script>
+      function goPage(index){
+          let p = document.querySelector('.consection');
+          switch(index){
+              case 1:
+                p.innerHTML = '<iframe width="90%" height="600px" src="p1/div.html" frameborder=0></iframe>';
+                break;
+              case 2:
+                p.innerHTML = '<iframe width="90%" height="650px" src="p2/tku60.html" frameborder=0></iframe>';
+                break;
+              case 3:
+                p.innerHTML = '<iframe width="90%" height="500px" src="p3/mytravel.html" frameborder=0></iframe>';
+                break;
+          }
+      }
+    </script>
+</head>
+
+<body onload="goPage(1)">
+    <div id="container">
+        <header>
+          <h1 id="text2">網頁程式設計期中考 - 林大有, 406410897</h1>
+        </header>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a onclick="goPage(1)">Div demo</a></li>
+                    <li><a onclick="goPage(2)">淡江大戲</a></li>
+                    <li><a onclick="goPage(3)">背包客</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="clearfix"></div>
+        <article>
+            <section class="consection">
+
+            </section>
+
+            <footer>
+                歡迎光臨我的網站
+            </footer>
+        </article>
+        
+    </div>
+</body>
+
+</html>

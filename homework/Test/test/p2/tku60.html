@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tku60</title>
+    <style>
+        #logo {
+            width: 20%;
+            height: 100px;
+            background-color: aqua;
+            float: left;
+            text-align: center;
+        }
+        img{
+            width:100%;
+            height:120px
+        }
+        #header {
+            width: 80%;
+            height: 100px;
+            background-color: aquamarine;
+            float: right;
+        }
+
+        #aside {
+            width: 20%;
+            height: 600px;
+            background-color: blue;
+            text-align: center
+        }
+
+        #nav {
+            width: 175px;
+            height: 455px;
+            background-color: red;
+            float: left;
+            margin-left: 65px;
+            margin-right: 5px;
+        }
+
+        li {
+            list-style: none;
+            cursor: pointer
+        }
+
+        #article {
+            width: 80%;
+            height: 500px;
+            background-color: salmon;
+            float: right;
+            margin-top: -500px
+        }
+
+        #footer {
+            width: 100%;
+            height: 70px;
+            background-color: blueviolet
+        }
+
+        #display {
+            width: 87.5%;
+            height: 300px;
+            background-color: cornflowerblue;
+            text-align: center;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        #piccontainer {
+            width: 93.5%;
+            height: 150px;
+            background-color: black;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 15px
+        }
+
+        .pic {
+            width: 18%;
+            height: 120px;
+            background: coral;
+            float: left;
+            margin: 10px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        #part li{
+            margin: 10px;
+            margin-left:40px;
+            margin-right:40px
+        }
+        #part li.active{
+            background: blue;
+            color: white;
+        }
+        .pic img.active{
+            border: 10px purple solid
+        }
+    </style>
+    <script>
+        function goPage(index){
+            let p = document.getElementById("display");
+            
+
+            let nav = document.querySelectorAll('#part li');
+            nav.forEach(function(li)
+                {
+                    li.classList = '';
+                 });
+            
+            let images =document.querySelectorAll('.pic img');
+            images.forEach(function(img){
+            img.classList='';
+            })
+                 switch (index) {
+                case 1 :
+                p.innerHTML ='<iframe width="500" height="280"  src="https://www.youtube.com/embed/RechrtUxfQc" frameborder="0" allowfullscreen></iframe>'
+                nav[0].classList.add('active'); 
+                images[0].classList.add('active'); 
+                    break;
+                    case 2 :
+                p.innerHTML ='<iframe width="500" height="280" src="https://www.youtube.com/embed/MRWX49Furew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+                nav[1].classList.add('active');    
+                images[1].classList.add('active')     
+                    break;
+                    case 3 :
+                p.innerHTML ='<iframe width="500" height="280" src="https://www.youtube.com/embed/METhdbL_iMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+                nav[2].classList.add('active');    
+                images[2].classList.add('active')     
+                    break;
+                    case 4 :
+                p.innerHTML ='<iframe width="500" height="280" src="https://www.youtube.com/embed/ZyDbq-lEKTo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+                nav[3].classList.add('active');    
+                images[3].classList.add('active')     
+                    break;
+                    case 5 :
+                p.innerHTML ='<iframe width="500" height="280" src="https://www.youtube.com/embed/NlsrJbVvjaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+                nav[4].classList.add('active');    
+                images[4].classList.add('active')     
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <div id="logo">
+            <img src="tku_logo.jpg"/>
+        </div>
+        <div id="header">
+            <h2>
+                header
+                國企三A 405550517 黃文志
+            </h2>
+        </div>
+    </div>
+    <div>
+        <div id="aside">
+            <h3>
+                aside
+            </h3>
+            <div id="nav">
+                <h4>
+                    nav
+                </h4>
+                <a href="#"><p>淡江大戲</p></a>
+                <div id="part">
+                <li><a onclick="goPage(1)">Part1</a></li>
+                <li><a onclick="goPage(2)">Part2</a></li>
+                <li><a onclick="goPage(3)">Part3</a></li>
+                <li><a onclick="goPage(4)">Part4</a></li>
+                <li><a onclick="goPage(5)">Part5</a></li>
+            </div>
+                <a href="#"><p>相簿</p></a>
+                <li>paparaya-1</li>
+                <li>paparaya-2</li>
+                <li>paparaya-3</li>
+            </div>
+        </div>
+        <div id="article">
+            <div id="display">
+                <h5>
+                    display
+                </h5>
+            </div>
+            <div id="piccontainer">
+                <div class="pic"><img src="images/TKU1.png"onclick="goPage(1)" ></div>
+                <div class="pic"><img src="images/TKU2.png"onclick="goPage(2)"></div>
+                <div class="pic"><img src="images/TKU3.png"onclick="goPage(3)"></div>
+                <div class="pic"><img src="images/TKU4.png"onclick="goPage(4)"></div>
+                <div class="pic"><img src="images/TKU5.png"onclick="goPage(5)"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        footer
+    </div>
+</body>
+
+</html>
